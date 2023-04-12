@@ -3,9 +3,9 @@ import './App.css';
 
 function callApi() {
   alert('Button was pressed!');
-  fetch('https://postman-echo.com/get')
-    .then(data => data.json()) // Parsing the data into a JavaScript object
-    .then(json => alert(JSON.stringify(json))) // Displaying the stringified data in an alert popup
+  fetch('https://postman-echo.com/get', { method: 'GET' })
+    .then(response => response.json())
+    .then(data => alert(data.title) ) // Displays the firstName from the API response
 }
 
 function App() {
