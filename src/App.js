@@ -5,7 +5,7 @@ function App() {
   const [books, setData] = useState(null);
 
   useEffect(() => {
-    fetch('https://odd-teal-hummingbird-gear.cyclic.app/books')
+    fetch('https://odd-teal-hummingbird-gear.cyclic.app/books', { method: 'GET' })
       .then(response => response.json())
       .then(books => setData(books))
       .catch(error => console.error(error));
