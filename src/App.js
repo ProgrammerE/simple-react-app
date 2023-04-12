@@ -13,7 +13,7 @@ function App() {
 }
 
 function callApi() {
-    fetch('https://odd-teal-hummingbird-gear.cyclic.app', { method: 'GET' })
+    fetch('https://odd-teal-hummingbird-gear.cyclic.app/books', { method: 'GET' })
         .then(books => books.json())
         .then(json => alert(JSON.stringify(json)))
 }
