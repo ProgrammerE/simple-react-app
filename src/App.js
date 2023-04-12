@@ -3,8 +3,8 @@ import './App.css';
 
 function callApi() {
   fetch('https://postman-echo.com/get', { method: 'GET' })
-    .then(response => response.json())
-    .then(data => alert(data.url) ) // Displays the firstName from the API response
+    .then(data => data.json()) // Parsing the data into a JavaScript object
+    .then(json => alert(JSON.stringify(json))) // Displaying the stringified data in an alert popup
 }
 
 function App() {
