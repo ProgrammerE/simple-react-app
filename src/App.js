@@ -3,13 +3,11 @@ import './App.css';
 function App() {
   return (
       <div className="App">
+        <h1>Users</h1>
         <header className="App-header">
           <button onClick={callApi}>Call API</button>
         </header>
       </div>
-
-      <h1>Users</h1>
-
   );
 
 }
