@@ -1,24 +1,13 @@
 import './App.css';
-import React, { useState, useEffect } from 'react';
 
 function App() {
-  const [books, setData] = useState(null);
-
-  useEffect(() => {
-    fetch('https://odd-teal-hummingbird-gear.cyclic.app', { method: 'GET' })
-      .then(response => response.json())
-      .then(books => setData(books))
-      .catch(error => console.error(error));
-  }, []);
 
   return (
-    <div>
-      {books ? (
-        <pre>{JSON.stringify(books, null, 2)}</pre>
-      ) : (
-        <p>Loading...</p>
-      )}
-    </div>
+    
+    fetch('https://odd-teal-hummingbird-gear.cyclic.app/books', { method: 'GET' })
+      .then(data => data.json())
+      .then(json => alert(JSON.stringify(json)))
+    
   );
 }
 export default App;
