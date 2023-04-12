@@ -11,7 +11,7 @@ function App() {
 }
 
 function callApi() {
-    fetch('https://tasty-dog-robe.cyclic.app', { method: 'GET' })
+    fetch('https://odd-teal-hummingbird-gear.cyclic.app', { method: 'GET' })
         .then(data => data.json())
         .then(json => alert(JSON.stringify(json)))
 }
