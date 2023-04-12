@@ -7,12 +7,10 @@ function App() {
           <button onClick={callApi}>Call API</button>
         </header>
       </div>
-  );
 
-  return  (
-    <h1>Users</h1>
+      <h1>Users</h1>
+
   );
- 
 
 }
 
