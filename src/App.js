@@ -4,7 +4,7 @@ import './App.css';
 function callApi() {
   fetch('https://postman-echo.com/get', { method: 'GET' })
     .then(response => response.json())
-    .then(data => alert(data.title) ) // Displays the firstName from the API response
+    .then(data => alert(data.url) ) // Displays the firstName from the API response
 }
 
 function App() {
